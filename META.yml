@@ -1,0 +1,48 @@
+---
+abstract: 'Run Pod::Weaver on the files within a distribution.'
+author:
+  - 'Sam Graham <libapp-podweaver-perl@illusori.co.uk>'
+build_requires:
+  File::Copy: 0
+  File::Spec: 0
+  File::Temp: 0.18
+  Pod::Elemental::Selectors: 0
+  Pod::Elemental::Transformer::Nester: 0
+  Software::License::Perl_5: 0
+  Test::Differences: 0
+  Test::MockObject: 0
+  Test::More: 0
+configure_requires:
+  Module::Build: 0.36
+dynamic_config: 0
+generated_by: 'Module::Build version 0.3607'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: App-podweaver
+provides:
+  App::podweaver:
+    file: lib/App/podweaver.pm
+    version: 0.99_01
+recommends:
+  Pod::Weaver::PluginBundle::ReplaceBoilerplate: 0
+requires:
+  CPAN::Meta: 0
+  File::Find::Rule: 0
+  File::Find::Rule::Perl: 0
+  File::Find::Rule::VCS: 0
+  File::Slurp: 0
+  IO::File: 0
+  Log::Any: 0
+  Log::Any::Adapter: 0
+  Log::Any::Adapter::Dispatch: 0
+  Module::Build::ModuleInfo: 0
+  PPI::Document: 0
+  Pod::Elemental: 0
+  Pod::Elemental::Transformer::Pod5: 0
+  Pod::Weaver: 0
+  Try::Tiny: 0
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.99_01
