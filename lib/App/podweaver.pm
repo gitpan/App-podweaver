@@ -24,7 +24,7 @@ use Pod::Weaver;
 use PPI::Document;
 use Try::Tiny;
 
-our $VERSION = '0.99_02';
+our $VERSION = '0.99_03';
 
 sub FAIL()              { 0; }
 sub SUCCESS_UNCHANGED() { 1; }
@@ -61,14 +61,6 @@ sub weave_file
     unless( $ppi_document = PPI::Document->new( \$perl ) )
     {
         $log->errorf( "PPI error in '%s': %s", $file, PPI::Document->errstr() )
-            if $log->is_error();
-        return( FAIL );
-    }
-
-    #  Pod::Weaver::Section::Name croaks if there's no package line.
-    unless( $ppi_document->find_first( 'PPI::Statement::Package' ) )
-    {
-        $log->errorf( "Unable to find package declaration in '%s'", $file )
             if $log->is_error();
         return( FAIL );
     }
@@ -444,7 +436,7 @@ App::podweaver - Run Pod::Weaver on the files within a distribution.
 
 =head1 VERSION
 
-version 0.99_02
+version 0.99_03
 
 =head1 SYNOPSIS
 
@@ -637,13 +629,6 @@ Data/App-podweaver/podweaver.ini> under Windows.)
 =head1 KNOWN ISSUES AND BUGS
 
 =over
-
-=item Currently skips files without C<package> declaration.
-
-L<Pod::Weaver::Plugin::Name> croaks if there's no C<package> declaration
-in the file, preventing L<Pod::Weaver> from running over scripts and
-C<.pod> files at this time.  L<App::podweaver> currently avoids trying
-to run on files that will trigger this problem.
 
 =item META.json/yml bootstrap is a mess
 

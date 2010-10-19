@@ -1,6 +1,7 @@
 #!/usr/bin/perl -w
 
 # ABSTRACT: Run Pod::Weaver on a file or distribution.
+# PODNAME: podweaver
 
 use warnings;
 use strict;
@@ -17,7 +18,7 @@ use Log::Any::Adapter;
 
 use App::podweaver;
 
-our $VERSION = '0.99_02';
+our $VERSION = '0.99_03';
 
 # ---------------------------------------------------------------------------
 
@@ -85,11 +86,6 @@ Log::Any::Adapter->set( 'Dispatch',
 
 App::podweaver->weave_distribution( %options );
 
-#  Fudge to let Pod::Weaver::Section::Name work without dying.
-package podweaver;
-
-1;
-
 __END__
 
 =pod
@@ -100,7 +96,7 @@ podweaver - Run Pod::Weaver on a file or distribution.
 
 =head1 VERSION
 
-version 0.99_02
+version 0.99_03
 
 =head1 SYNOPSIS
 

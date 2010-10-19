@@ -9,6 +9,7 @@ build_requires:
   Pod::Elemental::Selectors: 0
   Pod::Elemental::Transformer::Nester: 0
   Software::License::Perl_5: 0
+  Test::Command: 0.08
   Test::Differences: 0
   Test::MockObject: 0
   Test::More: 0
@@ -24,7 +25,7 @@ name: App-podweaver
 provides:
   App::podweaver:
     file: lib/App/podweaver.pm
-    version: 0.99_02
+    version: 0.99_03
 recommends:
   Pod::Weaver::PluginBundle::ReplaceBoilerplate: 0
 requires:
@@ -43,8 +44,8 @@ requires:
   PPI::Document: 0
   Pod::Elemental: 0
   Pod::Elemental::Transformer::Pod5: 0
-  Pod::Weaver: 0
+  Pod::Weaver: 3.101632
   Try::Tiny: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.99_02
+version: 0.99_03

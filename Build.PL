@@ -9,6 +9,7 @@ my $builder = Module::Build->new(
     dist_version_from   => 'lib/App/podweaver.pm',
     script_files        => 'script',
     build_requires => {
+        'Test::Command'     => 0.08,
         'Test::More'        => 0,
         'Test::MockObject'  => 0,
         'Test::Differences' => 0,
@@ -23,7 +24,8 @@ my $builder = Module::Build->new(
     requires => {
         'Config::Tiny'   => 0,
         'CPAN::Meta'     => 0,
-        'Pod::Weaver'    => 0,
+        # 3.101632 for ability to run on documents without package declaration
+        'Pod::Weaver'    => 3.101632,
         'File::HomeDir'  => 0,
         'File::Find::Rule'       => 0,
         'File::Find::Rule::Perl' => 0,
