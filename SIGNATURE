@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.64.
+signed via the Module::Signature module, version 0.68.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,14 +14,15 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 a3be03f4301316afbfaa4d9f7454e63d2832b956 Build.PL
-SHA1 c586a587f0375a8c69d457f80133282852db6e99 Changes
-SHA1 998598de6c1ad7a20dec7b83ab2a3e779f85b61c MANIFEST
-SHA1 1bf139cfc61f473f7c93ac96d87a103751f8b950 META.yml
-SHA1 054d11961ce4d74c92ff2a15a0d6d96c80b1829e README
+SHA1 598d6e0fdad11ac3c052d41f954d3b4edf6947db Build.PL
+SHA1 cee134d7fbc66dcaf7fbcd4b15e1f9f9b89d1c0d Changes
+SHA1 081c1d33c1c65ac7c56a9cd1283b3f64fa685f7c MANIFEST
+SHA1 28f58b1134afdb9d1410a5394d136498cb5aa90d META.json
+SHA1 2ea6a763c55dfb4e75215f11f35224d371c3c1e9 META.yml
+SHA1 93b04df9c7fbfa88f6e747fc1043e123e438fa30 README
 SHA1 7124c720c7e8da3c6975d0372ee68ea0d20c333c ignore.txt
-SHA1 5a4c4fc3415a3e0fabd703d08e5ae874f2539cc5 lib/App/podweaver.pm
-SHA1 4a7c6d2fecc360403c1c956a2da6c398334a3450 script/podweaver
+SHA1 00ba2883ec74736dcd56b6ea37a94a1dda71dd3c lib/App/podweaver.pm
+SHA1 65569da9724cf90f4ee4e1067cca7642489d359a script/podweaver
 SHA1 996b75c4fbec5e1b37f76d5c56eb9f491cf92631 t/00-load.t
 SHA1 73a3731ec27e217464a4d716872930973ca01c19 t/30-weave-file.t
 SHA1 c93aac15d01101e56a28f35f1d069d8d63aa2985 t/40-dist-info.t
@@ -55,11 +56,11 @@ SHA1 074478d651ffe96003315e31ce7990d01f7ff201 t/test_files/30-weave-file/no-pod-
 SHA1 6ccd9b13e2daa6ed99c043c30e6141de18dac59c t/test_files/30-weave-file/no-pod-no-end-with-data.out.txt
 SHA1 fde3860152e51102be54239c17e73524e648ee47 t/test_files/30-weave-file/no-pod-with-end-no-data.in.txt
 SHA1 ed78445b0fa6f0c3f5582c61805180f0ea9d123d t/test_files/30-weave-file/no-pod-with-end-no-data.out.txt
-SHA1 f416c91e43262b1f16a2ab48b4fc41d6d291ad47 weaver.ini
+SHA1 752680b3e564bb817342e7fc66cef2ca10d892cd weaver.ini
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.10 (GNU/Linux)
+Version: GnuPG v1.4.11 (GNU/Linux)
 
-iEYEARECAAYFAk0Dr+0ACgkQk0asf7iG0tS9SACfWPf63/uuk6wRh6286Pec07sd
-KVoAoI1J9yzqi427y4PkkJjGPogwipmh
-=wTUY
+iEYEARECAAYFAk6SCSUACgkQk0asf7iG0tSFuwCgmySyadIPMxqcV444+g8B6NAY
+WOcAn11DY/sTIm/bx0V0RLwLEYjw5GxG
+=BA57
 -----END PGP SIGNATURE-----

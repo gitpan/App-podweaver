@@ -24,7 +24,7 @@ use Pod::Weaver;
 use PPI::Document;
 use Try::Tiny;
 
-our $VERSION = '0.99_04';
+our $VERSION = '1.00';
 
 sub FAIL()              { 0; }
 sub SUCCESS_UNCHANGED() { 1; }
@@ -436,7 +436,7 @@ App::podweaver - Run Pod::Weaver on the files within a distribution.
 
 =head1 VERSION
 
-version 0.99_04
+version 1.00
 
 =head1 SYNOPSIS
 
@@ -451,6 +451,19 @@ default L<Pod::Weaver> behaviour of repeatedly appending.
 
 You can configure the L<Pod::Weaver> invocation by providinng a
 C<weaver.ini> file in the root directory of your distribution.
+
+=begin readme
+
+=head1 INSTALLATION
+
+To install this module, run the following commands:
+
+  perl Build.PL
+  ./Build
+  ./Build test
+  ./Build install
+
+=end readme
 
 =head1 BOOTSTRAPPING WITH META.json/META.yml
 
@@ -479,6 +492,8 @@ L<App::podweaver> again to produce the missing sections:
 This should only be neccessary on newly created distributions as
 both the META and the neccessary POD abstract should be present
 subsequently.
+
+=for readme stop
 
 =head1 METHODS
 
@@ -642,6 +657,12 @@ Please report any bugs or feature requests to C<bug-app-podweaver at rt.cpan.org
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=App-podweaver>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
+=head1 SEE ALSO
+
+L<Pod::Weaver>, L<podweaver>.
+
+=for readme continue
+
 =head1 SUPPORT
 
 You can find documentation for this module with the perldoc command.
@@ -676,7 +697,7 @@ Sam Graham <libapp-podweaver-perl BLAHBLAH illusori.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Sam Graham <libapp-podweaver-perl BLAHBLAH illusori.co.uk>.
+This software is copyright (c) 2010-2011 by Sam Graham <libapp-podweaver-perl BLAHBLAH illusori.co.uk>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
